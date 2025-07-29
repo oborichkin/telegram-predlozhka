@@ -1,0 +1,8 @@
+services:
+  bot:
+    image: suggestions
+    build:
+      context: .
+      dockerfile: Dockerfile
+    env_file: .env
+    restart: always
